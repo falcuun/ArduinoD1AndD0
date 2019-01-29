@@ -3,6 +3,7 @@ const int LED_PIN1 = 1;
 
 void setup() {
   pinMode(LED_PIN0, OUTPUT);
+  pinMode(LED_PIN1, OUTPUT);
 }
 
 int ledState = LOW;
@@ -22,5 +23,6 @@ void loop() {
     }
 
     digitalWrite(LED_PIN0, ledState);
+    digitalWrite(LED_PIN1, !ledState);
   }
 }
